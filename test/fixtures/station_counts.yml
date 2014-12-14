@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state_id: 
+  fuel_type_id: 
+  count: 1
+
+two:
+  state_id: 
+  fuel_type_id: 
+  count: 1

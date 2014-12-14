@@ -11,9 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141214204048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fuel_types", force: true do |t|
+    t.string   "abbr"
+    t.string   "desc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "states", force: true do |t|
+    t.string   "abbr"
+    t.string   "desc"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "station_counts", force: true do |t|
+    t.integer  "state_id"
+    t.integer  "fuel_type_id"
+    t.integer  "count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "percent"
+  end
+
+  add_index "station_counts", ["fuel_type_id"], name: "index_station_counts_on_fuel_type_id", using: :btree
+  add_index "station_counts", ["state_id"], name: "index_station_counts_on_state_id", using: :btree
 
 end

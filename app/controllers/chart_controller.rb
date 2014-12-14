@@ -3,7 +3,28 @@ class ChartController < ApplicationController
   def index
   end
 
-  def count_chart
+  def chart_from_database
+    abbr = params[:state]
+    state = State.where(abbr: abbr)
+
+    # eager loading models from foreign key
+    station_counts = StationCount.where(state: state).includes([:state, :fuel_type])
+
+    # create empty data array
+    data = []
+
+    # populate data array from database using linked FuelType
+    station_counts.each do |station_count|
+      data << [station_count.fuel_type.desc, station_count.percent.to_f]
+    end
+
+    # return data array as JSON
+    respond_to do |format|
+      format.json {render json: data} #this is data returned to user
+    end
+  end
+
+  def chart_from_station_counts
     hostname  = "http://developer.nrel.gov"
     api_key   = "oyz3TmTuOLaY0QS8hpBNk32s4nyocBlVasRABgbN"
     state     = params[:state]
@@ -38,8 +59,9 @@ class ChartController < ApplicationController
     end
   end
 
+  # method used to make data calls directly from API - hitting the fuel_stations key and calculating %
   # passing a state and getting back a hash with the data
-  def chart
+  def chart_from_stations
     hostname  = "http://developer.nrel.gov"
     api_key   = "oyz3TmTuOLaY0QS8hpBNk32s4nyocBlVasRABgbN"
     state     = params[:state]
