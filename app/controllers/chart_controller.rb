@@ -1,5 +1,5 @@
 class ChartController < ApplicationController
-
+  include ChartHelper
   def index
   end
 
@@ -29,7 +29,7 @@ class ChartController < ApplicationController
       # calculate percentage as float
       percent = count / station_count.to_f * 100
       # store in data array
-      data << [fuel_type, percent]
+      data << [get_fuel_type_desc(fuel_type), percent]
     end
 
     # return array as json

@@ -1,6 +1,15 @@
 module ChartHelper
+  FUEL_TYPES = {
+    "BD"   => "Biodiesel (B20 and above)",
+    "CNG"  => "Compressed Natural Gas",
+    "E85"  => "Ethanol (E85)",
+    "ELEC" => "Electric",
+    "HY"   => "Hydrogen",
+    "LNG"  => "Liquefied Natural Gas",
+    "LPG"  => "Liquefied Petroleum Gas (Propane)",
+  }
 
-def us_states
+  def us_states
     [
       ['Alabama', 'AL'],
       ['Alaska', 'AK'],
@@ -55,6 +64,10 @@ def us_states
       ['Wisconsin', 'WI'],
       ['Wyoming', 'WY']
     ]
-end
+  end
+
+  def get_fuel_type_desc(abbr)
+    FUEL_TYPES[abbr]
+  end
 
 end
