@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require highcharts
 //= require highcharts/highcharts-more
+//to change highcharts theme, add new require here
+//= require highcharts/themes/dark-unica
 //= require_tree .

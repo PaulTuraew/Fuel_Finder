@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
 resources :chart, only: :index
-get 'chart/data/:state' => 'chart#chart'
+get 'chart/data/:state' => 'chart#count_chart'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
