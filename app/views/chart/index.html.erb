@@ -1,14 +1,16 @@
 <%= render partial: "chart.js" %>
 
 <div id="titleheader">
+  <section id="titletext">
 <h1> Fuel Finder </h1>
 <p>Pick A State and Prevelance of Alternative Fuel Stations</p>
+</section>
 </div>
 
 <!--rails helper "select_tag" and us_states coming from helper method
   see: http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html-->
-  <section id="stateselect">
+<section id="stateselect">
 <%= select_tag :state, options_for_select(us_states), { :class => 'dropdown' } %>
 </section>
 
-<div id="container" style="width: 800px; height: 600px; margin: 0 auto"></div>
+<div id="container"></div>
