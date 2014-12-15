@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+root 'chart#index'
+
 resources :chart, only: :index
 get 'chart/data/:state' => 'chart#chart_from_database'
 get 'chart/data2/:state' => 'chart#chart_from_station_counts'
