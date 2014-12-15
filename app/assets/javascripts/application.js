@@ -16,5 +16,5 @@
 //= require highcharts
 //= require highcharts/highcharts-more
 //to change highcharts theme, add new require here
-//= require highcharts/themes/dark-unica
+//= require highcharts/themes/sand-signika
 //= require_tree .
