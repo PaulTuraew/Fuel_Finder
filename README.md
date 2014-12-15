@@ -1,13 +1,13 @@
-Metacog
+Fuel Finder
 =======
 
-[Visit Metacog](https://metacog.herokuapp.com/)
+[Visit Fuel Finder](https://______.herokuapp.com/)
 
 ### Overview
 
-**Metacog** is a web application that allows users to easily record their daily feelings at the end of a work day. It captures data about the user's mood and perceived reasons for that mood in order to gain a better long-term understanding of job satisfaction.
+**Fuel Finder** is a web application that allows users to view the types of alternative fuel stations in a given US state as well as their percentages for that state. 
 
-**Metacog** is a Ruby on Rails project completed as part of the September 2014 Web Development Immersive course at General Assembly. It was developed over a 5 day period.
+**Fuel Finder** is a Ruby on Rails project completed as part of the September 2014 Web Development Immersive course at General Assembly. It was developed over a 5 day period.
 
 ### Background
 Metacognition is the ability to make judgments  about our own thoughts. Strengthening your metacognition increases your awareness and understanding of your thinking process. 
