@@ -5,40 +5,21 @@ Fuel Finder
 
 ### Overview
 
-**Fuel Finder** is a web application that allows users to view the types of alternative fuel stations in a given US state as well as their percentages for that state. 
-
-**Fuel Finder** is a Ruby on Rails project completed as part of the September 2014 Web Development Immersive course at General Assembly. It was developed over a 5 day period.
+**Fuel Finder** is a single page web application that allows users to view the types of alternative fuel stations in a given US state as well as their relative percentages for that state. The application's data is publically available from the National Renewable Energy Laboratory.
 
 ### Background
-Metacognition is the ability to make judgments  about our own thoughts. Strengthening your metacognition increases your awareness and understanding of your thinking process. 
+**Fuel Finder** was developed as a data visualization project capitalizing on growing public interest in alternative fuel use in the United States. The data presented is useful for the user who wants to understand with a quick glance the different types of alternative fuel stations available to them in a given state. 
 
 ### User Stories / Expectations
 *Top Level*
 
-* A user should be able to retrieve mood data from a given time period, see his/her data in a usefull format.
-* A user should be able to compare mood data with other users based on company name and/or industry.
-* A user can opt-in to receive a text message reminder asking them to enter in mood rating for the day.
+* A user should be able to visit the site, select a state from a drop down of choices and upon selection, see a pie chart representation of the percentage breakdown of alternative fuel stations in that state.
 
 *Details*
 
-* A user should land on a homepage that will allow them to see the purpose of **Metacog** and *sign in* or *sign up*.
-* Only registered users are allowed to utilize **Metacog**.
-* If not a registered user, a user should be able to sign up.
-* If a user has already registered, they should be able to sign in.
-* Upon sign in, a user will provide:
-    * First name and last name (required);
-    * Email (required);
-    * Industry (required);
-    * Cell phone (optional);
-    * Company Name (optional); 
-    * Title (optional); and
-    * Age (optional).
-* Once signed in, a user can sign out.
-* Once signed in, a user should be able to go to a *capture mood* page.
-* The *capture mood* page will allow the user to enter 3 data points:
-    * Scale of 1-5 rating of mood;
-    * A string primary reason for mood (e.g.: co-worker, boss, project sucess, project failure, etc.)(optional); and
-    * Narrative (optional).
+* A user should land on a homepage that will allow them to see a dropdown of states and a default pie chart.
+* A user should be able to pick from all 50 US states in any order and as many times as they want.
+* With each new state picked, a new chart will render without refreshing the page. 
 
 ### Visuals
 [Click for Wireframes](https://github.com/PaulTuraew/Metacog/tree/master/Metacog_Wireframes) 
@@ -49,10 +30,10 @@ Metacognition is the ability to make judgments  about our own thoughts. Strength
 ### Technologies Used
 * Ruby 2.1.2
 * Ruby on Rails 4.1.6
+* JavaScript
+* jQuery
+* [NREL API](http://developer.nrel.gov/docs/)
 * PostgreSQL Database
-* Authentication and authorization from scratch using bcrypt Ruby gem
 * Additional gems used:
-    * Simplecov;
-    * 12_factor;
-    * Chartkick;
-    * Groupdate;
+    * Highcharts-rails;
+    * 12_factor.
