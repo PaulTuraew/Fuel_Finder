@@ -1,10 +1,7 @@
 <!--wrap the js tag around all that is passed below. this partial was created to keep the view lean -->
-
 <%= javascript_tag do %>
 
 <!--shorthand for jQuery document ready, binding a listener to the onchange event of state dropdown-->
-
-
 $(function () {
     var chart;
 
@@ -38,7 +35,7 @@ $(function () {
             type: 'pie',
             name: 'Alternative Fuel Type',
             data: [
-                ['Fuel',   100.0],
+                ['Fuel', 100.0],
             ]
         }]
     });
