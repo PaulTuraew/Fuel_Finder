@@ -22,7 +22,7 @@ Fuel Finder
 * With each new state picked, a new chart will render without refreshing the page. 
 
 ### Visuals
-[Click for Wireframes](https://github.com/PaulTuraew/Metacog/tree/master/Metacog_Wireframes) 
+[Click for Wireframes](https://github.com/PaulTuraew/Fuel_Finder/blob/master/ff_wireframe.JPG) 
 
 [Click for ERD](https://github.com/PaulTuraew/Metacog/tree/master/Metacog_ERD)
 
