@@ -7,7 +7,7 @@ namespace :chart do
     limit     = 1
     data_type = "alt-fuel-stations"
 
-
+#iterate through each state from the API and store in db
     State.all.each do |state|
     # state = State.first
       puts "Retrieving data for #{state.desc}"

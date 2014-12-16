@@ -7,7 +7,7 @@ class ChartController < ApplicationController
     abbr = params[:state]
     state = State.where(abbr: abbr)
 
-    # eager loading models from foreign key
+    # loading models from foreign key
     station_counts = StationCount.where(state: state).includes([:state, :fuel_type])
 
     # create empty data array
