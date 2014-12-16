@@ -9,6 +9,7 @@ module ChartHelper
     "LPG"  => "Liquefied Petroleum Gas (Propane)",
   }
 
+# accessed in index.html.erb (views) for the dropdown menu
   def us_states
     [
       ['Alabama', 'AL'],

@@ -4,7 +4,6 @@
 
 <!--shorthand for jQuery document ready, binding a listener to the onchange event of state dropdown-->
 
-
 $(function () {
     var chart;
 
@@ -43,7 +42,8 @@ $(function () {
         }]
     });
 
-<!-- on change function for option box -->
+<!-- on change function for dropdown box -->
+
     $( "#state" ).change(function() {
         console.log( $( this ).val() );
         $.get ("chart/data/"+ $(this).val() + ".json", function(data) {
@@ -53,6 +53,7 @@ $(function () {
     });
 
 <!-- AJAX call to get new chart data and update chart -->
+
     $.get ("chart/data/AL.json", function(data) {
         chart.series[0].setData(data);
     });
