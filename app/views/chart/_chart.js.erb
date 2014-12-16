@@ -46,7 +46,7 @@ $(function () {
 
     $( "#state" ).change(function() {
         console.log( $( this ).val() );
-        $.get ("chart/data/"+ $(this).val() + ".json", function(data) {
+        $.get ("chart/data/"+ $(this).val() + ".json", function(data) { <!--jQ getting URI for specific state picked in dropdown and returning data-->
             console.log(data);
             chart.series[0].setData(data);
         });
