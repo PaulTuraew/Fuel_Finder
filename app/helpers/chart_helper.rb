@@ -9,7 +9,7 @@ module ChartHelper
     "LPG"  => "Liquefied Petroleum Gas (Propane)",
   }
 
-# accessed in index.html.erb (views) for the dropdown menu
+# accessed in index.html.erb (views) for the dropdown menu http://stackoverflow.com/questions/6400010/rails-select-drop-down-for-states
   def us_states
     [
       ['Alabama', 'AL'],
