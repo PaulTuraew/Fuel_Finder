@@ -1,7 +1,7 @@
 Fuel Finder
 =======
 
-[Visit Fuel Finder](https://______.herokuapp.com/)
+[Visit Fuel Finder](https://fuel-finder.herokuapp.com/)
 
 ### Overview
 
@@ -24,7 +24,7 @@ Fuel Finder
 ### Visuals
 [Click for Wireframes](https://github.com/PaulTuraew/Fuel_Finder/blob/master/ff_wireframe.JPG) 
 
-[Click for ERD](https://github.com/PaulTuraew/Metacog/tree/master/Metacog_ERD)
+[Click for ERD](https://github.com/PaulTuraew/Fuel_Finder/blob/master/ff_erd.JPG)
 
 
 ### Technologies Used
