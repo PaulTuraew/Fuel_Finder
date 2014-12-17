@@ -9,8 +9,6 @@ namespace :chart do
 
 #iterate through each state from the API and store in db
     State.all.each do |state|
-    # state = State.first
-      puts "Retrieving data for #{state.desc}"
 
       state_abbr = state.abbr
       uri = URI("#{hostname}/api/#{data_type}/v1.json?api_key=#{api_key}&state=#{state_abbr}&limit=#{limit}")
