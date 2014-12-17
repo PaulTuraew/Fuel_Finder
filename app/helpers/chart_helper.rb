@@ -69,8 +69,9 @@
   #   ]
   # end
 
-  def get_fuel_type_desc(abbr)
-    FUEL_TYPES[abbr]
-  end
+#No longer needed
+#   def get_fuel_type_desc(abbr)
+#     FUEL_TYPES[abbr]
+#   end
 
-end
+# end
